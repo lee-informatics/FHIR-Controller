@@ -1,6 +1,6 @@
 {
     "$schema": "https://stack.skycapp.com/stack.schema.json",
-    "title": "FHIR Stack Controller",
+    "title": "FHIR Controller",
     "instructions": "Load the default FHIR server records.",
     "fhir_base_url": "http://localhost:8080/fhir",
     "driver": "hapi",
