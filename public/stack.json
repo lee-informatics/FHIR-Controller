@@ -1,0 +1,91 @@
+{
+    "$schema": "https://stack.skycapp.com/stack.schema.json",
+    "title": "FHIR Stack Controller",
+    "instructions": "Load the default FHIR server records.",
+    "fhir_base_url": "http://localhost:8080/fhir",
+    "driver": "hapi",
+    "links": [
+        {
+            "name": "Homepage",
+            "url": "http://localhost:8080"
+        },
+        {
+            "name": "R4 Base URL",
+            "url": "http://localhost:8080/fhir"
+        }
+    ],
+    "data": [
+        {
+            "file": "hospitalInformation1671557337568.json",
+            "load": true,
+            "loader": "fhir-bundle",
+            "name": "Organization Bundle 1",
+            "description": "Synthea-generated Organization records",
+            "type": "Organization Bundle",
+            "priority": 0
+        },
+        {
+            "file": "hospitalInformation1671557444542.json",
+            "load": true,
+            "loader": "fhir-bundle",
+            "name": "Organization Bundle 2",
+            "description": "Synthea-generated Organization records",
+            "type": "Organization Bundle",
+            "priority": 0
+        },
+        {
+            "file": "practitionerInformation1671557337568.json",
+            "load": true,
+            "loader": "fhir-bundle",
+            "name": "Practioner Bundle 1",
+            "description": "Synthea-generated Practitioner records",
+            "type": "Practitioner Bundle",
+            "priority": 0
+        },
+        {
+            "file": "practitionerInformation1671557444542.json",
+            "load": true,
+            "loader": "fhir-bundle",
+            "name": "Practioner Bundle2 ",
+            "description": "Synthea-generated Practitioner records",
+            "type": "Practitioner Bundle",
+            "priority": 0
+        },
+        {
+            "file": "Patient 1 - Adrian Allen1.json",
+            "load": true,
+            "loader": "fhir-bundle",
+            "name": "Patient 1 - Adrian Allen1",
+            "description": "Deidentified patient record from SHARES study.",
+            "type": "Patient Bundle",
+            "priority": 0
+        },
+        {
+            "file": "Patient 2 - Beth Brooks2.json",
+            "load": true,
+            "loader": "fhir-bundle",
+            "name": "Patient 2 - Beth Brooks2",
+            "description": "Deidentified patient record from SHARES study.",
+            "type": "Patient Bundle",
+            "priority": 0
+        },
+        {
+            "file": "Patient 3 - Carmen Chavez.json",
+            "load": true,
+            "loader": "fhir-bundle",
+            "name": "Patient 3 - Carmen Chavez",
+            "description": "Deidentified patient record from SHARES study.",
+            "type": "Patient Bundle",
+            "priority": 0
+        },
+        {
+            "file": "Patient 4 - Diana Dixon4.json",
+            "load": true,
+            "loader": "fhir-bundle",
+            "name": "Patient 4 - Diana Dixon4",
+            "description": "Deidentified patient record from SHARES study.",
+            "type": "Patient Bundle",
+            "priority": 0
+        }
+    ]
+}
