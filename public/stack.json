@@ -40,7 +40,7 @@
             "name": "Practioner Bundle 1",
             "description": "Synthea-generated Practitioner records",
             "type": "Practitioner Bundle",
-            "priority": 0
+            "priority": 5
         },
         {
             "file": "practitionerInformation1671557444542.json",
@@ -49,7 +49,7 @@
             "name": "Practioner Bundle2 ",
             "description": "Synthea-generated Practitioner records",
             "type": "Practitioner Bundle",
-            "priority": 0
+            "priority": 5
         },
         {
             "file": "Patient 1 - Adrian Allen1.json",
@@ -58,7 +58,7 @@
             "name": "Patient 1 - Adrian Allen1",
             "description": "Deidentified patient record from SHARES study.",
             "type": "Patient Bundle",
-            "priority": 0
+            "priority": 10
         },
         {
             "file": "Patient 2 - Beth Brooks2.json",
@@ -67,7 +67,7 @@
             "name": "Patient 2 - Beth Brooks2",
             "description": "Deidentified patient record from SHARES study.",
             "type": "Patient Bundle",
-            "priority": 0
+            "priority": 10
         },
         {
             "file": "Patient 3 - Carmen Chavez.json",
@@ -76,7 +76,7 @@
             "name": "Patient 3 - Carmen Chavez",
             "description": "Deidentified patient record from SHARES study.",
             "type": "Patient Bundle",
-            "priority": 0
+            "priority": 10
         },
         {
             "file": "Patient 4 - Diana Dixon4.json",
@@ -85,7 +85,7 @@
             "name": "Patient 4 - Diana Dixon4",
             "description": "Deidentified patient record from SHARES study.",
             "type": "Patient Bundle",
-            "priority": 0
+            "priority": 10
         }
     ]
 }
