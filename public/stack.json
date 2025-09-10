@@ -86,6 +86,36 @@
             "description": "Deidentified patient record from SHARES study.",
             "type": "Patient Bundle",
             "priority": 10
+        },
+        {
+            "file": "HelloWorld.cql",
+            "load": true,
+            "loader": "cql-as-fhir-library",
+            "name": "HelloWorld CQL Library",
+            "description": "CQL example 'Hello World' library for testing purposes.",
+            "type": "CQL Library",
+            "priority": 8,
+            "evaluate": {
+                "id": "HelloWorld",
+                "subjects": [
+                    {
+                        "id": "cfsb1703736930464",
+                        "name": "Adrian Allen"
+                    },
+                    {
+                        "id": "cfsb1699034947598",
+                        "name": "Beth Brooks"
+                    },
+                    {
+                        "id": "cfsb1700025838491",
+                        "name": "Carmen Chavez"
+                    },
+                    {
+                        "id": "cfsb1700154185275",
+                        "name": "Diana Dixon"
+                    }
+                ]
+            }
         }
     ]
 }
