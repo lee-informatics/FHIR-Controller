@@ -58,7 +58,7 @@
             "name": "Patient 1 - Adrian Allen1",
             "description": "Deidentified patient record from SHARES study.",
             "type": "Patient Bundle",
-            "priority": 10
+            "priority": 9
         },
         {
             "file": "Patient 2 - Beth Brooks2.json",
@@ -67,7 +67,7 @@
             "name": "Patient 2 - Beth Brooks2",
             "description": "Deidentified patient record from SHARES study.",
             "type": "Patient Bundle",
-            "priority": 10
+            "priority": 9
         },
         {
             "file": "Patient 3 - Carmen Chavez.json",
@@ -76,7 +76,7 @@
             "name": "Patient 3 - Carmen Chavez",
             "description": "Deidentified patient record from SHARES study.",
             "type": "Patient Bundle",
-            "priority": 10
+            "priority": 9
         },
         {
             "file": "Patient 4 - Diana Dixon4.json",
@@ -85,7 +85,7 @@
             "name": "Patient 4 - Diana Dixon4",
             "description": "Deidentified patient record from SHARES study.",
             "type": "Patient Bundle",
-            "priority": 10
+            "priority": 9
         },
         {
             "file": "HelloWorld.cql",
@@ -94,7 +94,7 @@
             "name": "HelloWorld CQL Library",
             "description": "CQL example 'Hello World' library for testing purposes.",
             "type": "CQL Library",
-            "priority": 8,
+            "priority": 10,
             "evaluate": {
                 "id": "HelloWorld",
                 "subjects": [
