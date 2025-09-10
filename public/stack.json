@@ -1,100 +1,127 @@
 {
-    "$schema": "https://stack.skycapp.com/stack.schema.json",
-    "title": "FHIR Controller",
-    "instructions": "Load the default FHIR server records.",
+    "$schema": "stack.schema.json",
+    "title": "Configuration Template",
+    "instructions": "Provide usage instructions here in markdown format.",
     "fhir_base_url": "http://localhost:8080/fhir",
     "driver": "hapi",
     "links": [
         {
-            "name": "Homepage",
+            "name": "FHIR Server",
             "url": "http://localhost:8080"
-        },
+        }
+    ],
+    "scenarios": [
         {
-            "name": "R4 Base URL",
-            "url": "http://localhost:8080/fhir"
+            "id": "partial",
+            "name": "Partial",
+            "description": "Small data set with the same CQL"
         }
     ],
     "data": [
         {
-            "file": "hospitalInformation1671557337568.json",
+            "file": "data/example/fhir/hospitalInformation1671557337568.json",
             "load": true,
             "loader": "fhir-bundle",
             "name": "Organization Bundle 1",
             "description": "Synthea-generated Organization records",
             "type": "Organization Bundle",
-            "priority": 0
+            "priority": 0,
+            "scenarios": [
+                "default",
+                "partial"
+            ]
         },
         {
-            "file": "hospitalInformation1671557444542.json",
+            "file": "data/example/fhir/hospitalInformation1671557444542.json",
             "load": true,
             "loader": "fhir-bundle",
             "name": "Organization Bundle 2",
             "description": "Synthea-generated Organization records",
             "type": "Organization Bundle",
-            "priority": 0
+            "priority": 1,
+            "scenarios": [
+                "default",
+                "partial"
+            ]
         },
         {
-            "file": "practitionerInformation1671557337568.json",
+            "file": "data/example/fhir/practitionerInformation1671557337568.json",
             "load": true,
             "loader": "fhir-bundle",
             "name": "Practioner Bundle 1",
             "description": "Synthea-generated Practitioner records",
             "type": "Practitioner Bundle",
-            "priority": 5
+            "priority": 2,
+            "scenarios": [
+                "default",
+                "partial"
+            ]
         },
         {
-            "file": "practitionerInformation1671557444542.json",
+            "file": "data/example/fhir/practitionerInformation1671557444542.json",
             "load": true,
             "loader": "fhir-bundle",
             "name": "Practioner Bundle2 ",
             "description": "Synthea-generated Practitioner records",
             "type": "Practitioner Bundle",
-            "priority": 5
+            "priority": 3,
+            "scenarios": [
+                "default",
+                "partial"
+            ]
         },
         {
-            "file": "Patient 1 - Adrian Allen1.json",
+            "file": "data/example/fhir/Patient 1 - Adrian Allen1.json",
             "load": true,
             "loader": "fhir-bundle",
             "name": "Patient 1 - Adrian Allen1",
             "description": "Deidentified patient record from SHARES study.",
             "type": "Patient Bundle",
-            "priority": 9
+            "priority": 4,
+            "scenarios": [
+                "default",
+                "partial"
+            ]
         },
         {
-            "file": "Patient 2 - Beth Brooks2.json",
+            "file": "data/example/fhir/Patient 2 - Beth Brooks2.json",
             "load": true,
             "loader": "fhir-bundle",
             "name": "Patient 2 - Beth Brooks2",
             "description": "Deidentified patient record from SHARES study.",
             "type": "Patient Bundle",
-            "priority": 9
+            "priority": 5
         },
         {
-            "file": "Patient 3 - Carmen Chavez.json",
+            "file": "data/example/fhir/Patient 3 - Carmen Chavez.json",
             "load": true,
             "loader": "fhir-bundle",
             "name": "Patient 3 - Carmen Chavez",
             "description": "Deidentified patient record from SHARES study.",
             "type": "Patient Bundle",
-            "priority": 9
+            "priority": 6
         },
         {
-            "file": "Patient 4 - Diana Dixon4.json",
+            "file": "data/example/fhir/Patient 4 - Diana Dixon4.json",
             "load": true,
             "loader": "fhir-bundle",
             "name": "Patient 4 - Diana Dixon4",
             "description": "Deidentified patient record from SHARES study.",
             "type": "Patient Bundle",
-            "priority": 9
+            "priority": 7
         },
         {
-            "file": "HelloWorld.cql",
+            "file": "data/example/cql/HelloWorld.cql",
             "load": true,
             "loader": "cql-as-fhir-library",
             "name": "HelloWorld CQL Library",
             "description": "CQL example 'Hello World' library for testing purposes.",
             "type": "CQL Library",
-            "priority": 10,
+            "priority": 8,
+            "scenarios": [
+                "default",
+                "partial"
+            ],
             "evaluate": {
                 "id": "HelloWorld",
                 "subjects": [
