@@ -1,7 +1,3 @@
-# FHIR Controller
+# FHIR Controller Template
 
-Web UI dasboard for FHIR seed data loading and server resets. Distributed via https://foundry.hl7.org.
-
-## License
-
-Apache 2.0
+Free project template for creating custom FHIR data distributions with prebuilt [FHIR Controller](https://github.com/preston/fhir-controller) images.
